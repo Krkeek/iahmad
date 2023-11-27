@@ -1,0 +1,22 @@
+:root {
+  --navbarElementsColor: rgba(0, 0, 0, 0.50);
+  --navbarElementActiveColor: #9BC368;
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+body {
+  margin: 0;
+  font-family: Outfit, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
+

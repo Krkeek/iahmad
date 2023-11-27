@@ -1,0 +1,9 @@
+.Container {
+    width: 60%;
+    display: flex;
+    padding: 0 2.5rem;
+}
+.Icons {
+    width: 80%;
+}
+

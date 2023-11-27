@@ -1,0 +1,54 @@
+.Navbar{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.NavbarBrand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+
+}
+.Brand {
+    width: 40%;
+}
+
+.NavbarElements {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    min-width: 35%;
+
+}
+.NavbarElement {
+    margin: 0 2rem;
+
+}
+
+.NavLink {
+    text-decoration: none;
+    color: var(--navbarElementsColor);
+    transition: color 0.2s linear;
+    font-size: 1.3rem;
+}
+
+.NavLink:hover{
+    color: var(--navbarElementActiveColor);
+    transition: color 0.2s linear;
+
+}
+
+.NavLinkActive{
+    color: var(--navbarElementActiveColor);
+    transition: color 0.2s linear;
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .NavbarElements {
+        display: none;
+    }
+}
