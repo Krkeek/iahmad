@@ -1,0 +1,46 @@
+
+.LanguageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    align-content: space-between;
+
+}
+.skill {
+    border-bottom: 1px solid black;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-bottom: 0.4em;
+    width: 29%;
+    margin-left: 2em;
+    margin-bottom: 1.6rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.skill img {
+    margin-right: 1rem;
+    width: 2rem;
+
+}
+
+.EmptySkill {
+    border-bottom: none;
+}
+
+.Header {
+    margin-bottom: 7rem;
+}
+.LanguageTitle {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.TechnologiesTitle {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}

@@ -1,0 +1,34 @@
+
+
+.Container {
+    display: flex;
+}
+
+.ImgContainer {
+    width: 40%;
+}
+.ContentContainer {
+    width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.ContentContainer p {
+    font-size: 2rem;
+    width: 75%;
+}
+.ContentContainer p span {
+    background-image: url("/Users/ahmadhijazi/WebstormProjects/iahmad/src/assets/images/purpleHighlight.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0.5rem;
+    font-weight: 500;
+}
+
+
+
+.ImgContainer img {
+    width: 80%;
+}
