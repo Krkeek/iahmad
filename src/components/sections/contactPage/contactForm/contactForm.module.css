@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-.Form {
-    height: 100%;
-}
 
 .Container {
     width: 100%;
@@ -31,9 +28,8 @@
 .TextArea {
     min-width: 100%;
     max-width: 100%;
-    min-height: 40%;
-    max-height: 40%;
-
+    resize: none;
+    height: 5rem
 }
 
 .Button {

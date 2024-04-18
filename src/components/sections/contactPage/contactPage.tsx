@@ -10,14 +10,14 @@ export default function ContactPage(){
             <SectionLayout name={'Contact me'} number={5}>
                     <div className={`${styles.Content}`}>
                         <div className={`${styles.LeftSide}`}>{contactMeSentence[0]}<span style={{color: "black"}}>{contactMeSentence[1]}</span>
-                            <div className={`${styles.SocialMediaDiv}`}><SocialMediaIcons isHorizontal={true}/></div>
-
                         </div>
                         <div className={`${styles.RightSide}`}>
                             <ContactForm/>
                         </div>
                     </div>
-                    <div className={`${styles.FooterBox}`}></div>
+                <div className={`${styles.FooterBox}`}>
+                    <div className={`${styles.SocialMediaDiv}`}><SocialMediaIcons isHorizontal={true}/></div>
+                </div>
             </SectionLayout>
         </>
     );
