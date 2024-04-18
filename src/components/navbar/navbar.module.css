@@ -8,11 +8,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 40%;
+
 
 }
 .Brand {
     width: 40%;
+    height: auto;
 }
 
 .NavbarElements {
@@ -59,7 +60,11 @@
         display: none;
     }
     .Brand{
-        width: 30%;
+        width: 70%;
+        height: auto;
+    }
+    .NavbarBrand {
+        margin-left: 5%;
     }
 
 

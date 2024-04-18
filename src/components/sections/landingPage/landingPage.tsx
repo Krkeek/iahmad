@@ -19,7 +19,7 @@ const LandingPage = ()=>{
                                 <div className={`${styles.Line}`}></div>
                                 HELLO
                             </div>
-                            <div className={`${styles.Name}`}>I'm Ahmad Hijazi</div>
+                            <div className={`${styles.Name}`}>I&apos;m Ahmad Hijazi</div>
                             <div className={`${styles.Description}`}>
                                 This is Ahmad Hijazi a software developer more specifically in web development located
                                 in Germany, Welcome to my portoflio go take a look.
