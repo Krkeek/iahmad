@@ -4,7 +4,6 @@
     padding: 5%;
     overflow: scroll;
     position: relative;
-    width: 100%;
 
 }
 
@@ -33,6 +32,11 @@
 
 
 @media only screen and (max-width: 769px) {
+    .Container {
+        margin: 1.5% 0;
+
+
+    }
     .Date {
         font-size: 0.8rem;
     }

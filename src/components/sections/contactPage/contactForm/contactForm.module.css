@@ -54,4 +54,25 @@
         max-height: 20%;
     }
 
+    .Container {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .Input{
+
+        border-radius: 0;
+        border-bottom: 2px solid black;
+        padding-bottom: 0.6rem;
+        margin-bottom: 5%;
+        width: 100%;
+        font-family: Outfit, serif;
+
+    }
+
+    .NotificationDiv {
+        font-size: 0.9rem;
+    }
+
 }

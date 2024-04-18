@@ -79,8 +79,14 @@
         align-items: center;
     }
     .Div {
-        width: 80%;
+        width: 90%;
 
+    }
+
+    .ResumeBoxDiv {
+
+        width: 100%;
+        max-width: 100%;
     }
 
     .Title {

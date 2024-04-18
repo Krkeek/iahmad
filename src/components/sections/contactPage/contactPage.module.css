@@ -69,8 +69,6 @@
 
 @media only screen and (max-width: 769px){
 
-
-
     .VerticalBarDiv {
         display: none;
     }
@@ -91,7 +89,9 @@
     }
 
     .RightSide {
+        margin-top: 5%;
         width: 75%;
+        height: 60%;
         -webkit-box-shadow: 13px 8px 0 0 #000000;
 
     }

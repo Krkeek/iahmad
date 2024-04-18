@@ -60,7 +60,7 @@ export default function ContactForm(){
                 <input onChange={(event) => editFormData("subject", event.target.value)} className={`${styles.Input}`} type={"text"} placeholder={'Subject'} required/>
                 <textarea onChange={(event) => editFormData("message", event.target.value)} className={`${styles.Input} ${styles.TextArea}`} placeholder={'Message'} required/>
                 <button style={ buttonDisabled ? {backgroundColor: "rgba(0, 0, 0, 0.5)"} : {backgroundColor: "black"}} disabled={buttonDisabled} onClick={handleSubmit} className={`${styles.Button}`}>Send</button>
-                <p>{notification.message}</p>
+                <p className={`${styles.NotificationDiv}`}>{notification.message}</p>
               </div>
 </>
     );
