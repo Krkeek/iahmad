@@ -1,0 +1,92 @@
+
+.ContentContainer{
+    height: 85%;
+    width: 100%;
+    display: flex;
+
+}
+
+
+
+.ScrollDown {
+    width: 3%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.VerticalBarDiv{
+    width: 3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Content {
+    padding-top: 5%;
+    width: 94%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.Div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+
+.ResumeBoxDiv {
+    width: 65%;
+}
+
+.Title{
+    font-size: 2rem;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Title img {
+    width: 20%;
+    margin-right: 1rem;
+}
+
+
+@media only screen and (max-width: 769px){
+
+
+
+    .ScrollDown {
+        display: none;
+    }
+
+    .VerticalBarDiv {
+        display: none;
+    }
+
+    .Content {
+        width: 100%;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Div {
+        width: 80%;
+
+    }
+
+    .Title {
+        margin-top: 10%;
+        justify-content: start;
+        font-size: 1.5rem;
+    }
+
+}

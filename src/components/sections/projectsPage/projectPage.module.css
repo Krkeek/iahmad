@@ -1,0 +1,68 @@
+.ContentContainer{
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
+
+.Container {
+    height: fit-content;
+}
+
+.ScrollDown {
+    width: 3%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.VerticalBarDiv{
+    width: 3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Content {
+        padding-top: 5%;
+        width: 94%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+}
+
+.Row {
+        display: flex;
+        justify-content: center;
+}
+.Col{
+        width: 25%;
+       height: fit-content;
+}
+
+
+@media only screen and (max-width: 769px){
+
+    .ContentContainer {
+        padding-top: 5%;
+    }
+
+    .ScrollDown {
+        display: none;
+    }
+
+    .VerticalBarDiv {
+        display: none;
+    }
+
+    .Content {
+        display: block;
+        margin: 0 auto;
+    }
+    .Col{
+        width: 100%;
+    }
+}

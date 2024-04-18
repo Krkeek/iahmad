@@ -1,0 +1,49 @@
+.Container {
+    border: 5px solid black;
+    margin: 0 1.5% 1.5%;
+    padding: 5%;
+    overflow: scroll;
+    position: relative;
+    width: 100%;
+
+}
+
+.Date{
+    font-size: 1rem;
+    padding-bottom: 1%;
+    font-weight: 400;
+
+}
+
+.Title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+
+}
+
+.Description {
+    padding-top: 5%;
+    font-size: 1.1rem;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+@media only screen and (max-width: 769px) {
+    .Date {
+        font-size: 0.8rem;
+    }
+
+    .Title {
+        font-size: 1.2rem;
+    }
+
+    .Description {
+        font-size: 0.9rem;
+
+    }
+
+}

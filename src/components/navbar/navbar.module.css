@@ -1,0 +1,66 @@
+.Navbar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.NavbarBrand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+
+}
+.Brand {
+    width: 40%;
+}
+
+.NavbarElements {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 35%;
+
+}
+.NavbarElement {
+    margin: 0 2rem;
+
+}
+
+.NavLink {
+    text-decoration: none;
+    color: var(--navbarElementsColor);
+    transition: color 0.2s linear;
+    font-size: 1.3rem;
+}
+
+.NavLink:hover{
+    color: var(--navbarElementActiveColor);
+    transition: color 0.2s linear;
+
+}
+
+.NavLinkActive{
+    color: var(--navbarElementActiveColor);
+    transition: color 0.2s linear;
+
+}
+
+
+@media only screen and (max-width: 769px) {
+
+
+    .Navbar{
+        padding-top: 4%;
+
+    }
+
+    .NavbarElement{
+        display: none;
+    }
+    .Brand{
+        width: 30%;
+    }
+
+
+}

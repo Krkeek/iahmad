@@ -1,0 +1,34 @@
+.Container {
+    display: flex;
+    flex-flow: column;
+
+
+}
+.Icons {
+    width: 2rem;
+    padding: 10% 0;
+}
+
+.HorizontalContainer {
+    flex-flow: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+}
+
+@media only screen and (max-width: 769px) {
+
+    .Container{
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+
+    }
+
+    .Icons{
+        width: auto;
+        height: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+}
