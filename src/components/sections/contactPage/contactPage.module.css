@@ -1,32 +1,9 @@
-.Container {
-    position: relative;
-
-}
-
-.ContentContainer{
-    height: 85%;
-    width: 100%;
-    display: flex;
-
-}
-
-
-.VerticalBarDiv{
-    width: 3%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .Content {
-    padding-top: 5%;
-    width: 97%;
     display: flex;
     justify-content: space-evenly;
     position: relative;
     z-index: 10;
-
 
 
 }
@@ -51,7 +28,7 @@
 
 .SocialMediaDiv {
     position: absolute;
-    bottom: 15%;
+    bottom: 0;
     left: 0;
     width: 20%;
 
@@ -69,22 +46,17 @@
 
 @media only screen and (max-width: 769px){
 
-    .VerticalBarDiv {
-        display: none;
-    }
+
     .Content {
         flex-flow: column;
         align-items: center;
-    }
-
-    .ContentContainer {
     }
 
 
     .LeftSide {
         text-align: center;
         font-size: 1rem;
-        width: 100%;
+        width: 95%;
 
     }
 
@@ -96,6 +68,10 @@
 
     }
     .SocialMediaDiv {
+        display: none;
+    }
+
+    .FooterBox {
         display: none;
     }
 

@@ -71,3 +71,102 @@ export const experiences = [
         description: "AI-SSISTANT"
     }
 ]
+
+export const socialMedia = [
+    {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/ahmadhijazii'
+    },
+    {
+        name: 'github',
+        url: 'https://www.github.com/Krkeek'
+    },
+    {
+        name: 'instagram',
+        url: 'https://www.instagram.com/ahmad_hijazii_/'
+
+    }
+];
+
+
+export const contactMeSentence = ['Lets do somthing new, different and more meaningfull or make things more practical or coneptual ? ','Just say hello!']
+
+
+export const languageSkills = [
+        {
+            name: 'Html',
+            url: '/images/skills/html.png'
+        },
+        {
+            name: 'CSS',
+            url: '/images/skills/css.png'
+        },
+        {
+            name: 'Javascript',
+            url: '/images/skills/javascript.png'
+        },
+        {
+            name: 'Typescript',
+            url: '/images/skills/typescript.png'
+        },
+        {
+            name: 'Java',
+            url: '/images/skills/java.png'
+        },
+        {
+            name: 'PHP',
+            url: '/images/skills/html.png'
+        },
+    ];
+
+
+export const techSkills = [
+    {
+        name: 'React JS',
+        url: '/images/skills/reactjs.png'
+    },
+    {
+        name: 'Bootstrap',
+        url: '/images/skills/bootstrap.png'
+    },
+    {
+        name: 'Gsap',
+        url: '/images/skills/gsap.png'
+    },
+    {
+        name: 'Firebase',
+        url: '/images/skills/firebase.png'
+    },
+    {
+        name: 'Github,Git',
+        url: '/images/skills/github.png'
+    },
+    {
+        name: 'MYSQL',
+        url: '/images/skills/mysql.png'
+    },
+    {
+        name: 'JQuery',
+        url: '/images/skills/jquery.png'
+    },
+    {
+        name: 'Angular 2+',
+        url: '/images/skills/angular.png'
+    },
+    {
+        name: 'Docker',
+        url: '/images/skills/docker.png'
+    },
+    {
+        name: 'Empty',
+        url: '/images/skills/jetbrains.png'
+    },
+    {
+        name: 'Space jetbrains',
+        url: '/images/skills/jetbrains.png'
+    },
+    {
+        name: 'Empty',
+        url: '/images/skills/jetbrains.png'
+    }
+]

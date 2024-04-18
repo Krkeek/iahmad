@@ -1,38 +1,7 @@
 
-.ContentContainer{
-    height: 85%;
-    width: 100%;
-    display: flex;
-
-}
-
-
-
-.ScrollDown {
-    width: 3%;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.VerticalBarDiv{
-    width: 3%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .Content {
-    padding-top: 5%;
-    width: 94%;
-    height: 100%;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 .Div {
@@ -63,16 +32,6 @@
 
 @media only screen and (max-width: 769px){
 
-
-
-    .ScrollDown {
-        display: none;
-    }
-
-    .VerticalBarDiv {
-        display: none;
-    }
-
     .Content {
         width: 100%;
         flex-flow: column;
@@ -81,15 +40,12 @@
     }
     .Div {
         width: 90%;
-
     }
-
     .ResumeBoxDiv {
 
         width: 100%;
         max-width: 100%;
     }
-
     .Title {
         margin-top: 10%;
         justify-content: start;

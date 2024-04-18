@@ -27,45 +27,9 @@ body {
   height: 100vh;
 }
 
-.header {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 15%;
-
-
-}
-.number {
-  font-size: 6rem;
-}
-
-.title {
-  font-size: 2rem;
-  letter-spacing: 1rem;
-}
-
-
-
 @media only screen and (max-width: 769px){
-
-
   .section {
     width: 100vw;
     height: fit-content;
   }
-  .header{
-    margin-top: 20%;
-  }
-
-  .number {
-    font-size: 3rem;
-  }
-
-  .title {
-    font-size: 1.5rem;
-    letter-spacing: 0.8rem;
-  }
-
 }

@@ -44,51 +44,7 @@
 }
 
 
-.ContentContainer{
-    height: 85%;
-    width: 100%;
-    display: flex;
-}
-
-.ScrollDown {
-    width: 3%;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-.Content {
-    width: 94%;
-    height: 100%;
-}
-
-.VerticalBarDiv{
-    width: 3%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 @media only screen and (max-width: 769px) {
-
-    .ContentContainer{
-        height: fit-content;
-    }
-    .VerticalBarDiv{
-        display: none;
-    }
-
-    .ScrollDown{
-        display: none;
-    }
-
-    .Content {
-        width: 100%;
-        height: fit-content;
-    }
 
     .LanguageContainer {
         width: 100%;
@@ -98,6 +54,5 @@
         font-weight: 400;
         width: 90%;
     }
-
 
 }

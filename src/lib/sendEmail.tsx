@@ -1,7 +1,8 @@
 import {validateForm} from "./valdiateForm";
+import {FormData} from "../../declarations";
 
 
-export const sendEmail =  async (formData: any) =>{
+export const sendEmail =  async (formData: FormData) =>{
 
     const isValid = validateForm(formData);
     if (isValid.status){
