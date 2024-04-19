@@ -1,0 +1,24 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns items vertically */
+    align-items: center; /* Aligns items horizontally */
+
+
+
+}
+
+.Nav{
+    width: 75%;
+    padding: 15% 0;
+    opacity: 0.5;
+}
+
+.ActiveNav {
+    opacity: 1 !important;
+}
+
+.Icons {
+    width: 100%;
+    height: auto;
+}

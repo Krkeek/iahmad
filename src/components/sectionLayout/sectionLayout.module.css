@@ -12,15 +12,18 @@
 
 .VerticalBarDiv{
     width: 3%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .ScrollDown {
     width: 3%;
-    height: inherit;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 
 }
 

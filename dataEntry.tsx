@@ -1,4 +1,22 @@
 
+export const HOME = {
+    name: 'HOME',
+    url: '/images/verticalbarIcons/home.png'
+};
+export const WORK = {
+    name: 'WORK',
+    url: '/images/verticalbarIcons/work.png'
+};
+export const MY_LIFE = {
+    name: 'MY LIFE',
+    url: '/images/verticalbarIcons/life.png'
+};
+export const CONTACT_ME = {
+    name: 'CONNECT',
+    url: '/images/verticalbarIcons/contact.png'
+};
+
+
 export const projects = [
     {
         date: "May 2024",

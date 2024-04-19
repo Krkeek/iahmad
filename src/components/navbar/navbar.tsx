@@ -1,9 +1,10 @@
 import styles from './navbar.module.css'
 import Link from "next/link";
 import Image from "next/image";
+import {CONTACT_ME, HOME, MY_LIFE, WORK} from "../../../dataEntry";
 const Navbar = ()=>{
 
-    const NavElements = ['HOME','WORK','MY LIFE', 'CONTACT']
+    const NavElements = [HOME,WORK,MY_LIFE,CONTACT_ME]
 
     return(
         <>
@@ -14,7 +15,7 @@ const Navbar = ()=>{
                 <div className={`${styles.NavbarElements}`}>
                     {
                         NavElements.map((element, index)=>(
-                            <div key={index} className={`${styles.NavbarElement}`}><Link className={`${styles.NavLink} ${index === 0 && styles.NavLinkActive}`} href={'#'}>{element}</Link></div>
+                            <div key={index} className={`${styles.NavbarElement}`}><Link className={`${styles.NavLink} ${index === 0 && styles.NavLinkActive}`} href={'#'}>{element.name}</Link></div>
                         ))
                     }
                 </div>
