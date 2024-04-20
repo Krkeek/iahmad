@@ -20,7 +20,7 @@ const Navbar = ()=>{
         <>
             <div className={`${styles.Navbar} animation`}>
                 <div className={`${styles.NavbarBrand}`}>
-                    <Image width={140} height={140} src={'/images/brand.webp'} alt={'brand'} className={`${styles.Brand}`}/>
+                    <Image width={45} height={45} src={'/images/brand.webp'} alt={'brand'} className={`${styles.Brand}`}/>
                 </div>
                 <div className={`${styles.NavbarElements}`}>
                     {
