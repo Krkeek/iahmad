@@ -12,7 +12,7 @@ export default function ResumePage(){
             <SectionLayout name={'Resume'} number={4} >
                         <div className={`${styles.Content}`}>
                             <div className={`${styles.Div}`}>
-                                <div className={`${styles.Title}`}><Image width={100} height={100} src={"/images/resume/education.png"} alt={'icon'}/>Education</div>
+                                <div className={`${styles.Title}`}><Image width={100} height={100} src={"/images/resume/education.webp"} alt={'icon'}/>Education</div>
                                 {
                                     educations.map(((education,index) =>(
                                         <div className={`${styles.ResumeBoxDiv}`} key={index}>
@@ -23,7 +23,7 @@ export default function ResumePage(){
 
                             </div>
                             <div className={`${styles.Div}`}>
-                                <div className={`${styles.Title}`}><Image width={100} height={100} src={"/images/resume/experience.png"} alt={'icon'}/>Experience</div>
+                                <div className={`${styles.Title}`}><Image width={100} height={100} src={"/images/resume/experience.webp"} alt={'icon'}/>Experience</div>
                                 {
                                     experiences.map(((experience, index) =>(
                                         <div className={`${styles.ResumeBoxDiv}`} key={index}>

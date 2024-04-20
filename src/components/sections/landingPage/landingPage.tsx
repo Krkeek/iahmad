@@ -3,14 +3,17 @@ import Navbar from "../../navbar/navbar";
 import ScrollDown from "../../scrollDown/scrollDown";
 import SocialMediaIcons from "../../socialMediaIcons/socialMediaIcons";
 import Image from "next/image";
+import Link from "next/link";
 
 const LandingPage = ()=>{
 
     return(
         <>
+
             <div className={`${styles.Container}`}>
                 <div className={`${styles.Top}`}>
                     <Navbar />
+
                 </div>
                 <div className={`${styles.ContentContainer}`}>
                     <div className={`${styles.LeftSide}`}>
@@ -31,7 +34,7 @@ const LandingPage = ()=>{
                         </div>
                     </div>
                     <div className={`${styles.RightSide}`}>
-                        <Image width={4000} height={4000} className={`${styles.Image}`} src={'/images/landingPageBG2.PNG'} alt={'landingPageBG'}/>
+                        <Image priority={true} width={700} height={700} className={`${styles.Image}`} src={'/images/photo/landing.webp'} alt={'landingPageBG'}/>
                     </div>
                     <div className={`${styles.MobileSocialDiv}`}>
                         <SocialMediaIcons isHorizontal={false}/>

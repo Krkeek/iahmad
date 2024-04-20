@@ -1,19 +1,19 @@
 
 export const HOME = {
     name: 'HOME',
-    url: '/images/verticalbarIcons/home.png'
+    url: '/images/verticalbarIcons/home.webp'
 };
 export const WORK = {
     name: 'WORK',
-    url: '/images/verticalbarIcons/work.png'
+    url: '/images/verticalbarIcons/work.webp'
 };
 export const MY_LIFE = {
     name: 'MY LIFE',
-    url: '/images/verticalbarIcons/life.png'
+    url: '/images/verticalbarIcons/life.webp'
 };
 export const CONTACT_ME = {
     name: 'CONNECT',
-    url: '/images/verticalbarIcons/contact.png'
+    url: '/images/verticalbarIcons/contact.webp'
 };
 
 
@@ -113,78 +113,90 @@ export const contactMeSentence = ['Lets do somthing new, different and more mean
 export const languageSkills = [
         {
             name: 'Html',
-            url: '/images/skills/html.png'
+            url: '/images/skills/html.webp'
         },
         {
             name: 'CSS',
-            url: '/images/skills/css.png'
+            url: '/images/skills/css.webp'
         },
         {
             name: 'Javascript',
-            url: '/images/skills/javascript.png'
+            url: '/images/skills/javascript.webp'
         },
         {
             name: 'Typescript',
-            url: '/images/skills/typescript.png'
+            url: '/images/skills/typescript.webp'
         },
         {
             name: 'Java',
-            url: '/images/skills/java.png'
+            url: '/images/skills/java.webp'
         },
         {
             name: 'PHP',
-            url: '/images/skills/html.png'
+            url: '/images/skills/php.webp'
         },
     ];
 
 
 export const techSkills = [
     {
+        name: 'Next JS',
+        url: '/images/skills/nextjs.webp'
+    },
+    {
         name: 'React JS',
-        url: '/images/skills/reactjs.png'
+        url: '/images/skills/reactjs.webp'
+    },
+    {
+        name: 'MongoDB',
+        url: '/images/skills/mongo.webp'
     },
     {
         name: 'Bootstrap',
-        url: '/images/skills/bootstrap.png'
+        url: '/images/skills/bootstrap.webp'
     },
     {
         name: 'Gsap',
-        url: '/images/skills/gsap.png'
+        url: '/images/skills/gsap.webp'
+    },
+    {
+        name: 'Restful API',
+        url: '/images/skills/restapi.webp'
     },
     {
         name: 'Firebase',
-        url: '/images/skills/firebase.png'
+        url: '/images/skills/firebase.webp'
     },
     {
         name: 'Github,Git',
-        url: '/images/skills/github.png'
+        url: '/images/skills/github.webp'
     },
     {
         name: 'MYSQL',
-        url: '/images/skills/mysql.png'
+        url: '/images/skills/mysql.webp'
     },
     {
         name: 'JQuery',
-        url: '/images/skills/jquery.png'
+        url: '/images/skills/jquery.webp'
     },
     {
         name: 'Angular 2+',
-        url: '/images/skills/angular.png'
+        url: '/images/skills/angular.webp'
     },
     {
         name: 'Docker',
-        url: '/images/skills/docker.png'
+        url: '/images/skills/docker.webp'
+    },
+    {
+        name: 'Figma',
+        url: '/images/skills/figma.webp'
     },
     {
         name: 'Empty',
-        url: '/images/skills/jetbrains.png'
+        url: '/images/skills/jetbrains.webp'
     },
     {
         name: 'Space jetbrains',
-        url: '/images/skills/jetbrains.png'
+        url: '/images/skills/jetbrains.webp'
     },
-    {
-        name: 'Empty',
-        url: '/images/skills/jetbrains.png'
-    }
 ]

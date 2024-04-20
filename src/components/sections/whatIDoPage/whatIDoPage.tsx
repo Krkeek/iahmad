@@ -7,9 +7,9 @@ const WhatIDoPage = ()=>{
     return(
         <>
             <SectionLayout name={'What i do'} number={1} >
-                <div className={`${styles.Content}`}>
+                <div id={'test'} className={`${styles.Content}`}>
                     <div className={`${styles.ImgContainer}`}>
-                        <Image width={500} height={500} className={`${styles.Image}`} src={"/images/whatIDo2.png"}
+                        <Image width={700} height={700} className={`${styles.Image}`} src={"/images/photo/whatido.webp"}
                                alt={'img'}/>
                     </div>
                     <div className={`${styles.ContentContainer}`}>
