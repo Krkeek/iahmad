@@ -13,7 +13,7 @@ const SocialMediaIcons = (props: props)=>{
             <div className={`${styles.Container} ${props.isHorizontal ? styles.HorizontalContainer : " "}`}>
                 {
                     socialMedia.map((platform,index)=>(
-                        <Link key={index} target={'_blank'} href={platform.url}><Image width={100} height={100} className={`${styles.Icons}`} src={`/images/socialMediaIcons/${platform.name}.webp`} alt={platform.name}/></Link>
+                        <Link key={index} target={'_blank'} href={platform.url}><Image width={100} height={100} className={`${styles.Icons} Social_animation`} src={`/images/socialMediaIcons/${platform.name}.webp`} alt={platform.name}/></Link>
                     ))
                 }
 

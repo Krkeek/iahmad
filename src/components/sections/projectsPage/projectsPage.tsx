@@ -21,7 +21,7 @@ export default function ProjectsPage(){
                                     <Project project={projects[6]} isExpand={!isFirstExpanded}/>
 
                                 </div>
-                                <div className={`${styles.Col}`}>
+                                <div id={'test'} className={`${styles.Col}`}>
                                     <Project project={projects[4]} isExpand={!isFirstExpanded}/>
                                     <Project project={projects[2]} isExpand={isFirstExpanded}/>
                                 </div>
