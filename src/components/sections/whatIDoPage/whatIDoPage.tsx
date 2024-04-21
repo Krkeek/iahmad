@@ -1,9 +1,15 @@
+'use client'
 import styles from './whatIDoPage.module.css'
-import ScrollDown from "../../scrollDown/scrollDown";
 import Image from "next/image";
-import Header from "@/components/header/header";
 import SectionLayout from "@/components/sectionLayout/sectionLayout";
+import {useGSAP} from "@gsap/react";
+import {whatidoPageAnimation} from "@/lib/gsap/whatidoPage";
 const WhatIDoPage = ()=>{
+    useGSAP(()=>{
+        whatidoPageAnimation();
+    })
+
+
     return(
         <>
             <SectionLayout name={'What i do'} number={1} >

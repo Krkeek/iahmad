@@ -6,7 +6,6 @@ import {CONTACT_ME, HOME, MY_LIFE, WORK} from "../../../dataEntry";
 
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import {navbarAnimation} from "@/lib/gsap/navbar";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollToPlugin);
 const Navbar = ()=>{
