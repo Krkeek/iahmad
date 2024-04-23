@@ -6,3 +6,20 @@
     padding-left: 10%;
     padding-bottom: 10%;
 }
+
+
+.Animation {
+    animation: moving 1s infinite;
+
+}
+
+@keyframes moving {
+    0% {
+        transform: translateY(0);
+
+    }
+    50%{
+        transform: translateY(5%);
+    }
+
+}

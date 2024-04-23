@@ -1,17 +1,47 @@
+export const sections = {
+    landingPage: {
+        id: "landingPage",
+        title: 'Landing Page'
+    },
+    whatidoPage: {
+        id: "whatidoPage",
+        title: 'What i do'
+    },
+    mySkillPage: {
+        id: "mySkillPage",
+        title: 'My Skills'
+    },
+    myProjectPage: {
+        id: "myProjectPage",
+        title: 'My Projects'
+    },
+    resumePage: {
+        id: "resumePage",
+        title: 'Resume'
+    },
+    connectPage: {
+        id: "connectPage",
+        title: 'Connect'
+    },
+}
 
 export const HOME = {
+    id: 'home',
     name: 'HOME',
     url: '/images/verticalbarIcons/home.webp'
 };
 export const WORK = {
+    id: 'work',
     name: 'WORK',
     url: '/images/verticalbarIcons/work.webp'
 };
 export const MY_LIFE = {
+    id: 'myLife',
     name: 'MY LIFE',
     url: '/images/verticalbarIcons/life.webp'
 };
 export const CONTACT_ME = {
+    id: 'connect',
     name: 'CONNECT',
     url: '/images/verticalbarIcons/contact.webp'
 };
@@ -199,4 +229,14 @@ export const techSkills = [
         name: 'Space jetbrains',
         url: '/images/skills/jetbrains.webp'
     },
-]
+];
+
+export const whatIDoText =
+    `A dedicated <span>web developer</span> driven by a passion for crafting elegant and
+                            functional websites. With a keen eye for design and a commitment to clean, efficient code, I
+                            bring ideas to life in the digital realm. I thrive on turning concepts into seamless user
+                            experiences and enjoy staying abreast of the latest web development trends`
+
+
+export const landingPageText = "This is Ahmad Hijazi a software developer more specifically in web development located\n" +
+    "                                in Germany, Welcome to my portoflio go take a look."

@@ -1,21 +1,32 @@
+'use client'
 import styles from './skillsPage.module.css'
-import ScrollDown from "../../scrollDown/scrollDown";
 import Image from "next/image";
-import Header from "@/components/header/header";
+import gsap from "gsap";
 import SectionLayout from "@/components/sectionLayout/sectionLayout";
-import {languageSkills, techSkills} from "../../../../dataEntry";
+import {languageSkills, sections, techSkills} from "../../../../dataEntry";
+import {useGSAP} from "@gsap/react";
+import {skillsPageAnimation} from "@/lib/gsap/skillsPage";
 
 
 
 const SkillsPage = ()=> {
 
+        useGSAP(()=>{
+                const ctx = gsap.context(()=>{
+                        skillsPageAnimation();
+                })
+
+                return ()=> ctx.revert()
+        })
+
+
 
 return(
     <>
 
-        <SectionLayout name={'My Skills'} number={2}>
-                <p className={`${styles.LanguageTitle}`}>Languages</p>
-                <div className={`${styles.LanguageContainer}`}>
+        <SectionLayout name={sections.mySkillPage.title} number={2} id={sections.mySkillPage.id}>
+                <p className={`${styles.LanguageTitle} LanguageTitle_animation`}>Languages</p>
+                <div className={`${styles.LanguageContainer} LanguageContainer_animation`}>
                     {
                         languageSkills.map((skill, index)=>{
 
@@ -28,8 +39,8 @@ return(
 
                         })}
                 </div>
-                <p className={`${styles.TechnologiesTitle}`}>Technologies</p>
-                <div className={`${styles.LanguageContainer}`}>
+                <p className={`${styles.TechnologiesTitle} TechnologiesTitle_animation`}>Technologies</p>
+                <div className={`${styles.LanguageContainer} TechnologiesContainer_animation`}>
                     {
                         techSkills.map((skill,index)=> {
 

@@ -12,8 +12,8 @@ const Navbar = ()=>{
 
     const { contextSafe } = useGSAP(); // we can pass in a config object as the 1st parameter to make scoping simple
     const handleNavigation = contextSafe((element: string)=>{
-        console.log(element);
-        gsap.to(window, { duration: 2, scrollTo: "#test" });
+        console.log(element)
+        gsap.to(window, { duration: 2, scrollTo: '#'+element });
     })
 
 
@@ -28,7 +28,7 @@ const Navbar = ()=>{
                 <div className={`${styles.NavbarElements}`}>
                     {
                         NavElements.map((element, index)=>(
-                            <div onClick={() => handleNavigation(element.name)} key={index} className={`${styles.NavbarElement} NavElement_animation`}><Link  className={`${styles.NavLink} ${index === 0 && styles.NavLinkActive}`} href={'#'}>{element.name}</Link></div>
+                            <div onClick={() => handleNavigation(element.id)} key={index} className={`${styles.NavbarElement} NavElement_animation`}><Link  className={`${styles.NavLink} ${index === 0 && styles.NavLinkActive}`} href={'#'}>{element.name}</Link></div>
                         ))
                     }
                 </div>

@@ -2,7 +2,7 @@
 import styles from './projectPage.module.css'
 import ScrollDown from "../../scrollDown/scrollDown";
 import Project from "./project/project";
-import {projects} from "../../../../dataEntry";
+import {projects, sections} from "../../../../dataEntry";
 import {useState} from "react";
 import Header from "@/components/header/header";
 import SectionLayout from "@/components/sectionLayout/sectionLayout";
@@ -13,7 +13,7 @@ export default function ProjectsPage(){
 
     return(
         <>
-            <SectionLayout name={'My Projects'} number={3} >
+            <SectionLayout name={sections.myProjectPage.title} id={sections.myProjectPage.id} number={3} >
                         <div className={`${styles.Content}`}>
                                 <div className={`${styles.Col}`}>
                                     <Project project={projects[0]} isExpand={isFirstExpanded}/>

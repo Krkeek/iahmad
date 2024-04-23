@@ -6,12 +6,15 @@ import SocialMediaIcons from "../../socialMediaIcons/socialMediaIcons";
 import Image from "next/image";
 import {useGSAP} from "@gsap/react";
 import {landingPageAnimation} from "@/lib/gsap/landingPage";
-
+import gsap from "gsap";
+import {landingPageText} from "../../../../dataEntry";
 const LandingPage = ()=>{
     useGSAP(()=>{
-        landingPageAnimation();
+        const ctx = gsap.context(()=>{
+            landingPageAnimation();
+        })
+        return () =>  ctx.revert();
     })
-
 
     return(
         <>
@@ -29,10 +32,7 @@ const LandingPage = ()=>{
                                 HELLO
                             </div>
                             <div className={`${styles.Name} Name_animation`}>I&apos;m Ahmad Hijazi</div>
-                            <div className={`${styles.Description} Desc_animation`}>
-                                This is Ahmad Hijazi a software developer more specifically in web development located
-                                in Germany, Welcome to my portoflio go take a look.
-                            </div>
+                            <div className={`${styles.Description} Desc_animation`}>{landingPageText}</div>
                             <a download={'Ahmad_Hijazi_Resume.pdf'}
                                href={'https://drive.google.com/uc?export=download&id=14iXawVsZrsLm-Q1gvyV8wYZv0AZvBMun'}
                                   className={`${styles.DownloadCvButton} Button_animation`}>DOWNLOAD CV</a>
