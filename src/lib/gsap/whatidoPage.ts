@@ -8,7 +8,7 @@ export const whatidoPageAnimation = () =>{
 
     const tl = gsap.timeline()
         .fromTo(`.${sections.whatidoPage.id}_Header_animation`,{opacity: 0},{ opacity:1 })
-        .to('.Image_animation',{opacity: 1},'<')
+        .fromTo('.Image_animation',{opacity: 0},{opacity: 1})
         .fromTo('.Text_animation', {opacity: 0},{opacity:1})
         .fromTo(`.${sections.whatidoPage.id}_ScrollDown_animation`,{opacity: 0},{opacity:1})
         .fromTo(`.${sections.whatidoPage.id}_VerticalBarDiv_animation`,{opacity: 0},{opacity:1})
@@ -21,6 +21,7 @@ export const whatidoPageAnimation = () =>{
     ScrollTrigger.create({
         trigger: `#${sections.whatidoPage.id}`,
         start: 'top 50%',
+        onEnterBack: () => tl.reverse(),
         animation: tl,
         onLeaveBack: () => textTween.reverse()
     });

@@ -24,7 +24,7 @@ export default function SectionLayout({id,name,number,children}: props){
                     <div className={`${styles.ContentContainer}`}>
                         {children}
                     </div>
-                    <div className={`${styles.ScrollDown} ${id}_ScrollDown_animation`}>
+                    <div style={name === sections.connectPage.title ? {display: 'none'} : {}} className={`${styles.ScrollDown} ${id}_ScrollDown_animation`}>
                         <ScrollDown/>
                     </div>
                 </div>

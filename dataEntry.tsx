@@ -240,3 +240,4 @@ export const whatIDoText =
 
 export const landingPageText = "This is Ahmad Hijazi a software developer more specifically in web development located\n" +
     "                                in Germany, Welcome to my portoflio go take a look."
+
