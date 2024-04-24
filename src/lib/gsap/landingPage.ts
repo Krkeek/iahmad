@@ -20,7 +20,7 @@ export const landingPageAnimation = () =>{
                 trigger: '.Container_animation',
                 start: 'middle top',
                 end: 'bottom top',
-                scrub: true,
+                scrub: true
             }})
     tl.play();
 

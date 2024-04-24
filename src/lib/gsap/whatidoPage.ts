@@ -12,21 +12,20 @@ export const whatidoPageAnimation = () =>{
         .fromTo('.Text_animation', {opacity: 0},{opacity:1})
         .fromTo(`.${sections.whatidoPage.id}_ScrollDown_animation`,{opacity: 0},{opacity:1})
         .fromTo(`.${sections.whatidoPage.id}_VerticalBarDiv_animation`,{opacity: 0},{opacity:1})
-        // .to(`.${sections.whatidoPage.id}_SectionLayout_animation`,{opacity:0})
 
-    ScrollTrigger.create({
-        trigger: `#${sections.whatidoPage.id}`,
-        start: 'top 70%',
-        end: 'top middle',
-        scrub: true,
-        animation: tl
-    });
-
-
-    gsap.to('.Text_animation',{text: {value: whatIDoText} , ease: "none", duration: 5, scrollTrigger:{
+    const textTween = gsap.to('.Text_animation',{text: {value: whatIDoText} , ease: "none", duration: 5, scrollTrigger:{
             trigger: `#${sections.whatidoPage.id}`,
             start: 'top top',
         }})
+
+    ScrollTrigger.create({
+        trigger: `#${sections.whatidoPage.id}`,
+        start: 'top 50%',
+        animation: tl,
+        onLeaveBack: () => textTween.reverse()
+    });
+
+
 
 
 }

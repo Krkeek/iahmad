@@ -14,24 +14,31 @@ export const skillsPageAnimation = () =>{
         .fromTo(`.${sections.mySkillPage.id}_VerticalBarDiv_animation`,{opacity: 0},{opacity:1})
         .fromTo(`.${sections.mySkillPage.id}_ScrollDown_animation`,{opacity: 0},{opacity:1})
 
-    ScrollTrigger.create({
-        trigger: `#${sections.mySkillPage.id}`,
-        start: 'top 70%',
-        end: 'top middle',
-        scrub: true,
-        animation: tl,
-    })
-
-
     const tl2 = gsap.timeline()
         .fromTo('.Border_animation',{ width: 0},{ width: "100%",duration: 0.5})
         .fromTo('.SkillIcon_animation',{ opacity: 0},{ opacity: 1 ,duration: 0.5})
-        .fromTo('.SkillIcon_Title',{ opacity: 0},{ opacity: 1 ,duration: 0.5})
+        .fromTo('.SkillIcon_Title',{ opacity: 0, xPercent: -40},{xPercent: 0, opacity: 1 ,duration: 0.5})
+
+
 
 
     ScrollTrigger.create({
         trigger: `#${sections.mySkillPage.id}`,
-        start: 'top 30%',
+        start: 'top 60%',
+        end: 'top 5%',
+        scrub: true,
+        onEnterBack: () => {
+            tl2.reverse();
+        },
+        onEnter: () =>{
+          tl2.play()
+        },
+        animation: tl,
+    })
+
+    ScrollTrigger.create({
+        trigger: `#${sections.mySkillPage.id}`,
+        start: 'top 20%',
         animation: tl2,
     })
 

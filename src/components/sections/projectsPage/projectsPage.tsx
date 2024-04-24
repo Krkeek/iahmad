@@ -1,13 +1,24 @@
 'use client'
 import styles from './projectPage.module.css'
-import ScrollDown from "../../scrollDown/scrollDown";
 import Project from "./project/project";
 import {projects, sections} from "../../../../dataEntry";
 import {useState} from "react";
-import Header from "@/components/header/header";
+import gsap from "gsap";
 import SectionLayout from "@/components/sectionLayout/sectionLayout";
+import {useGSAP} from "@gsap/react";
+import {projectsPageAnimation} from "@/lib/gsap/projectsPage";
 
 export default function ProjectsPage(){
+
+
+    useGSAP(()=>{
+        const ctx = gsap.context(()=>{
+            projectsPageAnimation()
+        })
+
+        return () => ctx.revert()
+
+    })
 
     const [isFirstExpanded, setIsFirstExpanded] = useState(true);
 
