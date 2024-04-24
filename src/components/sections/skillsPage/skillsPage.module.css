@@ -8,15 +8,25 @@
 
 }
 .skill {
-    border-bottom: 1px solid black;
     font-size: 1.3rem;
-    padding-bottom: 0.4em;
     width: 29%;
     margin-left: 4%;
     margin-bottom: 1.7%;
+}
+
+.Border {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding-bottom: 0.4em;
 
+
+
+}
+
+.WidthDiv{
+    width: 29%;
 }
 
 .skill img {

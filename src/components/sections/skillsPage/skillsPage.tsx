@@ -33,7 +33,7 @@ return(
                                 if (skill.name === 'Empty')
                                         return <div key={index} className={`${styles.skill} ${styles.EmptySkill}`}></div>
                                         return(
-                                            <div key={index} className={`${styles.skill}`}><Image width={100} height={100} src={skill.url} alt={skill.name}/>{skill.name}</div>
+                                            <div key={index} className={`${styles.skill} Skill_animation`}><div className={`${styles.Border} Border_animation`}><Image className={`SkillIcon_animation`} width={100} height={100} src={skill.url} alt={skill.name}/><span className={'SkillIcon_Title'}>{skill.name}</span></div></div>
                                         )
 
 
@@ -47,7 +47,12 @@ return(
                                 if (skill.name === 'Empty')
                                         return <div key={index} className={`${styles.skill} ${styles.EmptySkill}`}></div>
                                         return (
-                                            <div key={index} className={`${styles.skill}`}><Image width={100} height={100} src={skill.url} alt={skill.name}/>{skill.name}</div>
+                                            <div key={index} className={`${styles.skill} Skill_animation`}>
+                                                    <div className={`${styles.Border} Border_animation`}>
+                                                    <Image
+                                                className={`SkillIcon_animation`} width={100} height={100}
+                                                src={skill.url} alt={skill.name}/><span className={'SkillIcon_Title'}>{skill.name}</span>
+                                                    </div></div>
                                         )
 
                         })

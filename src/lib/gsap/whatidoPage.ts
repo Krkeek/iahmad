@@ -8,22 +8,25 @@ export const whatidoPageAnimation = () =>{
 
     const tl = gsap.timeline()
         .fromTo(`.${sections.whatidoPage.id}_Header_animation`,{opacity: 0},{ opacity:1 })
-        .to('.Text_animation',{text: {value: whatIDoText} , ease: "none", duration: 5})
         .to('.Image_animation',{opacity: 1},'<')
+        .fromTo('.Text_animation', {opacity: 0},{opacity:1})
         .fromTo(`.${sections.whatidoPage.id}_ScrollDown_animation`,{opacity: 0},{opacity:1})
         .fromTo(`.${sections.whatidoPage.id}_VerticalBarDiv_animation`,{opacity: 0},{opacity:1})
-        .to(`.${sections.whatidoPage.id}_SectionLayout_animation`,{opacity:0})
+        // .to(`.${sections.whatidoPage.id}_SectionLayout_animation`,{opacity:0})
 
     ScrollTrigger.create({
         trigger: `#${sections.whatidoPage.id}`,
-        start: 'top top',
-        end: '200% top',
+        start: 'top 70%',
+        end: 'top middle',
         scrub: true,
-        pin: true,
-
         animation: tl
     });
 
+
+    gsap.to('.Text_animation',{text: {value: whatIDoText} , ease: "none", duration: 5, scrollTrigger:{
+            trigger: `#${sections.whatidoPage.id}`,
+            start: 'top top',
+        }})
 
 
 }
