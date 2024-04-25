@@ -18,10 +18,10 @@ export const createTransporter =  () => {
 
 
 
-export const sendMail = async (transporter: any, data:FormData) =>{
-    const { name, email, subject, message} = data;
-    // send mail with defined transport object
-    const info = await transporter.sendMail({
+export const sendMail = async (transporter: any, data:FormData) => {
+    const {name, email, subject, message} = data;
+
+    transporter.sendMail({
         from: 'iahmad_portfolio@hotmail.com', // sender address
         to: "ahmadhijazi_me@hotmail.com", // list of receivers
         subject: `${subject}`, // Subject line
@@ -32,7 +32,6 @@ export const sendMail = async (transporter: any, data:FormData) =>{
 <b>Message:</b><br>
 <p>${message}</p>
 `,
-    });
-
+    })
 }
 

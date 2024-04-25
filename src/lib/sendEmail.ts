@@ -4,7 +4,7 @@ import {FormData} from "../../declarations";
 
 export const sendEmail =  async (formData: FormData) =>{
     const isValid = validateForm(formData);
-    if (isValid.status){
+    if (isValid){
         try{
             const response = await fetch('/api/v1/mails',{
                 method: "POST",
@@ -29,13 +29,18 @@ export const sendEmail =  async (formData: FormData) =>{
 
             return {
                 status: false,
+                display: 'Error fetching',
                 message: e
             }
         }
 
     }
     else {
-        return isValid
+        return {
+            status: false,
+            display: 'Missing input',
+            message: ''
+        }
     }
 
 }

@@ -2,30 +2,33 @@ import {NextRequest, NextResponse} from "next/server";
 import {createTransporter, sendMail} from "@/server/nodemailer";
 
 
+
+type Response  = {
+    status: boolean,
+    display: string,
+    message: string
+}
+
 export async function POST (req: NextRequest){
 
     const data = await req.json();
     const transporter = createTransporter();
+    try {
+        await sendMail(transporter, data);
+        return NextResponse.json<Response>({
+            status: true,
+            display: 'Email sent',
+            message: " "
+        },{status: 200});
+    }
+    catch (e){
+        return NextResponse.json<Response>({
+            status: false,
+            display: 'Error sending the mail',
+            message: " "+e
+        }, {status: 500});
 
-    sendMail(transporter, data)
-        .then((response) => {
-            return NextResponse.json({
-                status: true,
-                message: response,
-                display: "Email sent"
-            },
-                {status: 200}
-                )})
-        .catch(error => {
-            console.log(error)
-            return NextResponse.json({
-                status: false,
-                message: error,
-                display: "Error sending the email"
-            },
-                {status: 500})
-        });
-
+    }
 }
 
 
