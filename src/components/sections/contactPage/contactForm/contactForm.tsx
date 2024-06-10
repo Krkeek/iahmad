@@ -16,7 +16,7 @@ export default function ContactForm(){
         subject: '',
         message: ''
     });
-    const [buttonDisabled, setButtonDisabled] = useState(false);
+    const [buttonDisabled, setButtonDisabled] = useState(true);
 
     const editFormData = (inputValue: string, newValue: string) =>{
        setFormData((prevState)=>({
