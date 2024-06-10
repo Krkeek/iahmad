@@ -10,6 +10,9 @@
 
 .Animation {
     animation: moving 1s infinite;
+    position: fixed;
+    top: 40%;
+    right: 1%;
 
 }
 

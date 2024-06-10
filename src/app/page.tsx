@@ -5,19 +5,16 @@ import SkillsPage from "@/components/sections/skillsPage/skillsPage";
 import ProjectsPage from "@/components/sections/projectsPage/projectsPage";
 import ResumePage from "@/components/sections/resumePage/resumePage";
 import ContactPage from "@/components/sections/contactPage/contactPage";
-import { ReactLenis } from '@studio-freight/react-lenis'
 
 export default function Home() {
   return (
 <>
-  <ReactLenis root>
     <LandingPage />
     <WhatIDoPage />
     <SkillsPage />
     <ProjectsPage />
     <ResumePage />
     <ContactPage />
-  </ReactLenis>
 </>
   );
 }
