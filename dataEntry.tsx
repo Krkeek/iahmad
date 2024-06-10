@@ -5,7 +5,7 @@ export const sections = {
     },
     whatidoPage: {
         id: "whatidoPage",
-        title: 'What i do'
+        title: 'Why Me?'
     },
     mySkillPage: {
         id: "mySkillPage",
@@ -232,12 +232,8 @@ export const techSkills = [
 ];
 
 export const whatIDoText =
-    `A dedicated <span>web developer</span> driven by a passion for crafting elegant and
-                            functional websites. With a keen eye for design and a commitment to clean, efficient code, I
-                            bring ideas to life in the digital realm. I thrive on turning concepts into seamless user
-                            experiences and enjoy staying abreast of the latest web development trends`
+    `I started playing around with code in high school, and it sparked a <span>passion</span> that stuck with me ever since. With a strong work ethic, dedication, motivation and years of experience I've been able to give my best results, consistently exceeding expectations and pushing the boundaries of what I thought possible `
 
 
-export const landingPageText = "This is Ahmad Hijazi a software developer more specifically in web development located\n" +
-    "                                in Germany, Welcome to my portoflio go take a look."
+export const landingPageText = "Hey there! Ever wondered how ideas become stunning websites? I'm a web engineer who loves making that magic happen. Need a hand with your next project? Let's turn your vision into reality"
 

@@ -13,7 +13,7 @@ export const whatidoPageAnimation = () =>{
         .fromTo(`.${sections.whatidoPage.id}_ScrollDown_animation`,{opacity: 0},{opacity:1})
         .fromTo(`.${sections.whatidoPage.id}_VerticalBarDiv_animation`,{opacity: 0},{opacity:1})
 
-    const textTween = gsap.to('.Text_animation',{text: {value: whatIDoText} , ease: "none", duration: 5, scrollTrigger:{
+    const textTween = gsap.to('.Text_animation',{text: {value: whatIDoText} , ease: "none", duration: 3, scrollTrigger:{
             trigger: `#${sections.whatidoPage.id}`,
             start: 'top top',
         }})
