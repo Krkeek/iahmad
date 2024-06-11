@@ -13,6 +13,9 @@
   scrollbar-width: none;
 }
 
+html{
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
