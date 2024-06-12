@@ -10,10 +10,10 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollToPlugin);
 const Navbar = ()=>{
 
-    const { contextSafe } = useGSAP(); // we can pass in a config object as the 1st parameter to make scoping simple
+    const { contextSafe } = useGSAP();
     const handleNavigation = contextSafe((element: string)=>{
         console.log(element)
-        gsap.to(window, { duration: 2, scrollTo: '#'+element });
+        gsap.to(window, { duration: 1, scrollTo: '#'+element });
     })
 
 

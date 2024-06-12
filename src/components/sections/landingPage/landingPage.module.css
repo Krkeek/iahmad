@@ -31,10 +31,10 @@
 }
 
 .Content{
-    height: fit-content;
+    height: 70%;
     width: fit-content;
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 20%;
 
 }

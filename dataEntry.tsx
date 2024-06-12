@@ -31,7 +31,7 @@ export const HOME = {
     url: '/images/verticalbarIcons/home.webp'
 };
 export const WORK = {
-    id: 'work',
+    id: 'whatidoPage',
     name: 'WORK',
     url: '/images/verticalbarIcons/work.webp'
 };
@@ -41,7 +41,7 @@ export const MY_LIFE = {
     url: '/images/verticalbarIcons/life.webp'
 };
 export const CONTACT_ME = {
-    id: 'connect',
+    id: 'connectPage',
     name: 'CONNECT',
     url: '/images/verticalbarIcons/contact.webp'
 };
