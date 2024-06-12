@@ -136,9 +136,11 @@
     }
     .LeftSide {
         width: 100%;
+        margin-top: 25%;
     }
     .RightSide{
         width: 100%;
+        margin-top: 2rem;
     }
     .Image{
         width: 100%;

@@ -6,8 +6,8 @@ export const resumePageAnimation = () =>{
     const tl = gsap.timeline()
         .fromTo(`.${sections.resumePage.id}_Header_animation`,{opacity: 0},{ opacity:1 })
         .fromTo('.ExperienceTitle_animation',{opacity: 0},{opacity:1})
-        .from('.ExperienceBoxDiv_animation',{x: '-50vw', stagger: 0.5},'<')
-        .from('.EducationBoxDiv_animation',{x: '50vw', stagger: 0.5},'<')
+        .from('.ExperienceBoxDiv_animation',{x: '-100vw', stagger: 0.5},'<')
+        .from('.EducationBoxDiv_animation',{x: '100vw', stagger: 0.5},'<')
         .fromTo(`.${sections.resumePage.id}_VerticalBarDiv_animation`,{opacity: 0},{opacity:1})
         .fromTo(`.${sections.resumePage.id}_ScrollDown_animation`,{opacity: 0},{opacity:1})
 

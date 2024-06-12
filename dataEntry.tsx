@@ -235,5 +235,5 @@ export const whatIDoText =
     `I started playing around with code in high school, and it sparked a <span>passion</span> that stuck with me ever since. With a strong work ethic, dedication, motivation and years of experience I've been able to give my best results, consistently exceeding expectations and pushing the boundaries of what I thought possible `
 
 
-export const landingPageText = "Hey there! Ever wondered how ideas become stunning websites? I'm a web engineer who loves making that magic happen. Need a hand with your next project? Let's turn your vision into reality"
+export const landingPageText = "Ever wondered how ideas become stunning websites? I'm a web engineer who loves making that magic happen. Need a hand with your next project? Let's turn your vision into reality"
 
