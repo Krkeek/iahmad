@@ -24,10 +24,8 @@ export const skillsPageAnimation = () =>{
 
     ScrollTrigger.create({
         trigger: `#${sections.mySkillPage.id}`,
-        start: 'top 60%',
-        end: 'top 5%',
-        scrub: true,
-        onEnterBack: () => {
+        start: 'top 50%',
+        onLeaveBack: () => {
             tl2.reverse();
         },
         onEnter: () =>{

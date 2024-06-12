@@ -5,14 +5,15 @@ export const projectsPageAnimation = ()=>{
     gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline()
-        .from('.Project_animation',{y: "100vh", stagger: 0.5, duration:5})
+        .from('.Project_animation',{y: "100vh", stagger: 0.1, duration:1})
 
 
     ScrollTrigger.create({
         trigger: `#${sections.myProjectPage.id}`,
         start: 'top 80%',
-        end: 'top 5%',
-        scrub: true,
+        onLeaveBack: () => {
+            tl.reverse();
+        },
         animation: tl,
     })
 
