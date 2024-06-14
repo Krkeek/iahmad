@@ -5,7 +5,7 @@ import SkillsPage from "@/components/sections/skillsPage/skillsPage";
 import ProjectsPage from "@/components/sections/projectsPage/projectsPage";
 import ResumePage from "@/components/sections/resumePage/resumePage";
 import ContactPage from "@/components/sections/contactPage/contactPage";
-
+import { Analytics } from '@vercel/analytics/react';
 export default function Home() {
   return (
 <>
@@ -15,6 +15,7 @@ export default function Home() {
     <ProjectsPage />
     <ResumePage />
     <ContactPage />
+    <Analytics />
 </>
   );
 }
