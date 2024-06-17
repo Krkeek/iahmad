@@ -5,8 +5,21 @@ import { fallbackLng, languages, cookieName } from './app/i18n/settings'
 
 acceptLanguage.languages(languages)
 
+export const config = {
+    matcher: [
+        /*
+         * Match all request paths except for the ones starting with:
+         * - api (API routes)
+         * - _next/static (static files)
+         * - _next/image (image optimization files)
+         * - favicon.ico (favicon file)
+         */
+        '/((?!api|_next/static|_next/image|favicon.ico|assets|de/images|en/images|static|.*\\\\..*).*)'    ],
+}
+
 
 export function middleware(req: any) {
+
     let lng
     if (req.cookies.has(cookieName)) lng = acceptLanguage.get(req.cookies.get(cookieName).value)
     if (!lng) lng = acceptLanguage.get(req.headers.get('Accept-Language'))
@@ -31,15 +44,3 @@ export function middleware(req: any) {
     return NextResponse.next()
 }
 
-export const config = {
-    matcher: [
-        /*
-         * Match all request paths except for the ones starting with:
-         * - api (API routes)
-         * - _next/static (static files)
-         * - _next/image (image optimization files)
-         * - favicon.ico (favicon file)
-         */
-        '/((?!api|_next/static|_next/image|_next/image?url=/images|favicon.ico|assets|images).*)',
-    ],
-}
