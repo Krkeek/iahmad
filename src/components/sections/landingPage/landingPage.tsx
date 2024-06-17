@@ -51,7 +51,7 @@ const LandingPage = ()=>{
                         </div>
                     </div>
                     <div className={`${styles.RightSide}`}>
-                        <Image priority={true} width={700} height={700} className={`${styles.Image} Photo_animation`} src={'/images/photo/landing.webp'} alt={'landingPageBG'}/>
+                        <Image priority={true} width={700} height={700} className={`${styles.Image} Photo_animation`} src={'/assets/photo/landing.webp'} alt={'landingPageBG'}/>
                     </div>
                     <div className={`${styles.MobileSocialDiv}`}>
                         <SocialMediaIcons isHorizontal={false}/>

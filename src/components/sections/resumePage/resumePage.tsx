@@ -21,7 +21,7 @@ export default function ResumePage(){
             <SectionLayout id={sections.resumePage.id} name={sections.resumePage.title} number={4} >
                         <div className={`${styles.Content}`}>
                             <div className={`${styles.Div}`}>
-                                <div className={`${styles.Title} ExperienceTitle_animation`}><Image width={100} height={100} src={"/images/resume/education.webp"} alt={'icon'}/>Education</div>
+                                <div className={`${styles.Title} ExperienceTitle_animation`}><Image width={100} height={100} src={"/assets/resume/education.webp"} alt={'icon'}/>Education</div>
                                 {
                                     educations.map(((education,index) =>(
                                         <div className={`${styles.ResumeBoxDiv} ExperienceBoxDiv_animation`} key={index}>
@@ -32,7 +32,7 @@ export default function ResumePage(){
 
                             </div>
                             <div className={`${styles.Div}`}>
-                                <div className={`${styles.Title} ExperienceTitle_animation`}><Image width={100} height={100} src={"/images/resume/experience.webp"} alt={'icon'}/>Experience</div>
+                                <div className={`${styles.Title} ExperienceTitle_animation`}><Image width={100} height={100} src={"/assets/resume/experience.webp"} alt={'icon'}/>Experience</div>
                                 {
                                     experiences.map(((experience, index) =>(
                                         <div className={`${styles.ResumeBoxDiv} EducationBoxDiv_animation`} key={index}>

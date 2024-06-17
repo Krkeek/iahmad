@@ -30,7 +30,7 @@ const Navbar = ()=>{
         <>
             <div className={`${styles.Navbar} Navbar_animation`}>
                 <div className={`${styles.NavbarBrand}`}>
-                    <Image width={45} height={45} src={'/images/brand.webp'} alt={'brand'} className={`${styles.Brand} Brand_animation`}/>
+                    <Image width={45} height={45} src={'/assets/brand.webp'} alt={'brand'} className={`${styles.Brand} Brand_animation`}/>
                 </div>
                 <div className={`${styles.NavbarElements}`}>
                     {

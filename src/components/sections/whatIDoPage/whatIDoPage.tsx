@@ -21,7 +21,7 @@ const WhatIDoPage = ()=>{
             <SectionLayout id={sections.whatidoPage.id} name={sections.whatidoPage.title} number={1} >
                 <div className={`${styles.Content}`}>
                     <div className={`${styles.ImgContainer} Image_animation`}>
-                        <Image width={550} height={550} className={`${styles.Image}`} src={"/images/photo/whatido.webp"}
+                        <Image width={550} height={550} className={`${styles.Image}`} src={"/assets/photo/whatido.webp"}
                                alt={'img'}/>
                     </div>
                     <div className={`${styles.ContentContainer}`}>
