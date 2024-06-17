@@ -6,7 +6,15 @@ import {useGSAP} from "@gsap/react";
 import {whatidoPageAnimation} from "@/lib/gsap/whatidoPage";
 import {sections, WORK} from "../../../../dataEntry";
 import gsap from "gsap";
+import {useParams} from "next/navigation";
+import {useTranslation} from "@/app/i18n/client";
 const WhatIDoPage = ()=>{
+    const params = useParams<{ lng: string }>()
+    // @ts-ignore
+    const { t } = useTranslation(params.lng,'whatIDoPage')
+
+
+
     useGSAP(()=>{
         const ctx = gsap.context(()=>{
             whatidoPageAnimation();
@@ -26,7 +34,7 @@ const WhatIDoPage = ()=>{
                     </div>
                     <div className={`${styles.ContentContainer}`}>
                         <p className={'Text_animation'}>
-                            I started playing around with code in high school, and it sparked a <span>passion</span> that stuck with me ever since. With a strong work ethic, dedication, motivation and years of experience I&apos;ve been able to give my best results, consistently exceeding expectations and pushing the boundaries of what I thought possible.
+                            {t('Paragraph')}
                         </p>
                     </div>
                 </div>

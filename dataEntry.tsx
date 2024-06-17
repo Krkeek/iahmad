@@ -8,15 +8,15 @@ export const sections = {
     },
     whatidoPage: {
         id: "whatidoPage",
-        title: 'Why Me?'
+        title: 'WhyMe?'
     },
     mySkillPage: {
         id: "mySkillPage",
-        title: 'My Skills'
+        title: 'MySkills'
     },
     myProjectPage: {
         id: "myProjectPage",
-        title: 'My Projects'
+        title: 'MyProjects'
     },
     resumePage: {
         id: "resumePage",

@@ -6,10 +6,18 @@ import SectionLayout from "@/components/sectionLayout/sectionLayout";
 import {languageSkills, sections, techSkills} from "../../../../dataEntry";
 import {useGSAP} from "@gsap/react";
 import {skillsPageAnimation} from "@/lib/gsap/skillsPage";
+import {useParams} from "next/navigation";
+import {useTranslation} from "@/app/i18n/client";
 
 
 
 const SkillsPage = ()=> {
+
+        const params = useParams<{ lng: string }>()
+        // @ts-ignore
+        const { t } = useTranslation(params.lng,'skillsPage')
+
+
 
         useGSAP(()=>{
                 const ctx = gsap.context(()=>{
@@ -25,7 +33,7 @@ return(
     <>
 
         <SectionLayout name={sections.mySkillPage.title} number={2} id={sections.mySkillPage.id}>
-                <p className={`${styles.LanguageTitle} LanguageTitle_animation`}>Languages</p>
+                <p className={`${styles.LanguageTitle} LanguageTitle_animation`}>{t('lang')}</p>
                 <div className={`${styles.LanguageContainer} LanguageContainer_animation`}>
                     {
                         languageSkills.map((skill, index)=>{
@@ -39,7 +47,7 @@ return(
 
                         })}
                 </div>
-                <p className={`${styles.TechnologiesTitle} TechnologiesTitle_animation`}>Technologies</p>
+                <p className={`${styles.TechnologiesTitle} TechnologiesTitle_animation`}>{t('tech')}</p>
                 <div className={`${styles.LanguageContainer} TechnologiesContainer_animation`}>
                     {
                         techSkills.map((skill,index)=> {
