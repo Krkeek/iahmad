@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
-import {sections, whatIDoText} from "../../../dataEntry";
+import {sections} from "../../../dataEntry";
 export const whatidoPageAnimation = () =>{
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(TextPlugin);

@@ -26,7 +26,7 @@ const WhatIDoPage = ()=>{
                     </div>
                     <div className={`${styles.ContentContainer}`}>
                         <p className={'Text_animation'}>
-                            I started playing around with code in high school, and it sparked a <span>passion</span> that stuck with me ever since. With a strong work ethic, dedication, motivation and years of experience I&apos;ve been able to give my best results, consistently exceeding expectations and pushing the boundaries of what I thought possible
+                            I started playing around with code in high school, and it sparked a <span>passion</span> that stuck with me ever since. With a strong work ethic, dedication, motivation and years of experience I&apos;ve been able to give my best results, consistently exceeding expectations and pushing the boundaries of what I thought possible.
                         </p>
                     </div>
                 </div>

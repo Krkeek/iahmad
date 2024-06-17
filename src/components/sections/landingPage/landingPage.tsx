@@ -7,14 +7,25 @@ import Image from "next/image";
 import {useGSAP} from "@gsap/react";
 import {landingPageAnimation} from "@/lib/gsap/landingPage";
 import gsap from "gsap";
-import {landingPageText} from "../../../../dataEntry";
+import {useParams} from "next/navigation";
+import {useTranslation} from "@/app/i18n/client";
+import {getOptions} from "@/app/i18n/settings";
+// @ts-ignore
 const LandingPage = ()=>{
+
+    const params = useParams<{ lng: string }>()
+        // @ts-ignore
+    const { t } = useTranslation(params.lng,'landingPage')
+
+
     useGSAP(()=>{
         const ctx = gsap.context(()=>{
             landingPageAnimation();
         })
         return () =>  ctx.revert();
     })
+
+
 
     return(
         <>
@@ -29,13 +40,13 @@ const LandingPage = ()=>{
                         <div className={`${styles.Content}`}>
                             <div className={`${styles.Title} Title_animation`}>
                                 <div className={`${styles.Line}`}></div>
-                                HELLO
+                                {t('Hello')}
                             </div>
-                            <div className={`${styles.Name} Name_animation`}>I&apos;m Ahmad Hijazi</div>
-                            <div className={`${styles.Description} Desc_animation`}>{landingPageText}</div>
+                            <div className={`${styles.Name} Name_animation`}>{t('Iam')} Ahmad Hijazi</div>
+                            <div className={`${styles.Description} Desc_animation`}>{t('LandingPageParagraph')}</div>
                             <a download={'Ahmad_Hijazi_Resume.pdf'}
                                href={'https://drive.google.com/uc?export=download&id=14iXawVsZrsLm-Q1gvyV8wYZv0AZvBMun'}
-                                  className={`${styles.DownloadCvButton} Button_animation`}>DOWNLOAD CV</a>
+                                  className={`${styles.DownloadCvButton} Button_animation`}>{t('DownloadCV')}</a>
 
                         </div>
                     </div>
@@ -47,7 +58,7 @@ const LandingPage = ()=>{
                     </div>
 
                     <div className={`${styles.ScrollDown} Scroll_animation`}>
-                        <ScrollDown/>
+                        <ScrollDown />
                     </div>
                 </div>
                 <div className={`${styles.SocialDiv}`}>

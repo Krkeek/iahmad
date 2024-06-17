@@ -7,8 +7,15 @@ import {CONTACT_ME, HOME, MY_LIFE, WORK} from "../../../dataEntry";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import {useParams} from "next/navigation";
+import {useTranslation} from "@/app/i18n/client";
 gsap.registerPlugin(ScrollToPlugin);
 const Navbar = ()=>{
+
+    const params = useParams<{ lng: string }>()
+    // @ts-ignore
+    const { t } = useTranslation(params.lng,'landingPage')
+
 
     const { contextSafe } = useGSAP();
     const handleNavigation = contextSafe((element: string)=>{
@@ -28,7 +35,7 @@ const Navbar = ()=>{
                 <div className={`${styles.NavbarElements}`}>
                     {
                         NavElements.map((element, index)=>(
-                            <div onClick={() => handleNavigation(element.id)} key={index} className={`${styles.NavbarElement} NavElement_animation`}><Link  className={`${styles.NavLink} ${index === 0 && styles.NavLinkActive}`} href={'#'}>{element.name}</Link></div>
+                            <div onClick={() => handleNavigation(element.id)} key={index} className={`${styles.NavbarElement} NavElement_animation`}><Link  className={`${styles.NavLink} ${index === 0 && styles.NavLinkActive}`} href={'#'}> {t(element.name)}</Link></div>
                         ))
                     }
                 </div>

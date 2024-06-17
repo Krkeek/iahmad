@@ -1,3 +1,6 @@
+import {useParams} from "next/navigation";
+import {useTranslation} from "@/app/i18n/client";
+
 export const sections = {
     landingPage: {
         id: "landingPage",
@@ -25,24 +28,26 @@ export const sections = {
     },
 }
 
+
+
 export const HOME = {
     id: 'home',
-    name: 'HOME',
+    name: 'Home',
     url: '/images/verticalbarIcons/home.webp'
 };
 export const WORK = {
     id: 'whatidoPage',
-    name: 'WORK',
+    name: 'Work',
     url: '/images/verticalbarIcons/work.webp'
 };
 export const MY_LIFE = {
     id: 'myLife',
-    name: 'MY LIFE',
+    name: 'MyLife',
     url: '/images/verticalbarIcons/life.webp'
 };
 export const CONTACT_ME = {
     id: 'connectPage',
-    name: 'CONNECT',
+    name: 'Connect',
     url: '/images/verticalbarIcons/contact.webp'
 };
 
