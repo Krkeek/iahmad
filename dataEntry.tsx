@@ -33,22 +33,22 @@ export const sections = {
 export const HOME = {
     id: 'home',
     name: 'Home',
-    url: '/images/verticalbarIcons/home.webp'
+    url: '/assets/verticalbarIcons/home.webp'
 };
 export const WORK = {
     id: 'whatidoPage',
     name: 'Work',
-    url: '/images/verticalbarIcons/work.webp'
+    url: '/assets/verticalbarIcons/work.webp'
 };
 export const MY_LIFE = {
     id: 'myLife',
     name: 'MyLife',
-    url: '/images/verticalbarIcons/life.webp'
+    url: '/assets/verticalbarIcons/life.webp'
 };
 export const CONTACT_ME = {
     id: 'connectPage',
     name: 'Connect',
-    url: '/images/verticalbarIcons/contact.webp'
+    url: '/assets/verticalbarIcons/contact.webp'
 };
 
 
@@ -148,27 +148,27 @@ export const contactMeSentence = ['Lets do somthing new, different and more mean
 export const languageSkills = [
         {
             name: 'Html',
-            url: '/images/skills/html.webp'
+            url: '/assets/skills/html.webp'
         },
         {
             name: 'CSS',
-            url: '/images/skills/css.webp'
+            url: '/assets/skills/css.webp'
         },
         {
             name: 'Javascript',
-            url: '/images/skills/javascript.webp'
+            url: '/assets/skills/javascript.webp'
         },
         {
             name: 'Typescript',
-            url: '/images/skills/typescript.webp'
+            url: '/assets/skills/typescript.webp'
         },
         {
             name: 'Java',
-            url: '/images/skills/java.webp'
+            url: '/assets/skills/java.webp'
         },
         {
             name: 'PHP',
-            url: '/images/skills/php.webp'
+            url: '/assets/skills/php.webp'
         },
     ];
 
@@ -176,63 +176,63 @@ export const languageSkills = [
 export const techSkills = [
     {
         name: 'Next JS',
-        url: '/images/skills/nextjs.webp'
+        url: '/assets/skills/nextjs.webp'
     },
     {
         name: 'React JS',
-        url: '/images/skills/reactjs.webp'
+        url: '/assets/skills/reactjs.webp'
     },
     {
         name: 'MongoDB',
-        url: '/images/skills/mongo.webp'
+        url: '/assets/skills/mongo.webp'
     },
     {
         name: 'Bootstrap',
-        url: '/images/skills/bootstrap.webp'
+        url: '/assets/skills/bootstrap.webp'
     },
     {
         name: 'Gsap',
-        url: '/images/skills/gsap.webp'
+        url: '/assets/skills/gsap.webp'
     },
     {
         name: 'Restful API',
-        url: '/images/skills/restapi.webp'
+        url: '/assets/skills/restapi.webp'
     },
     {
         name: 'Firebase',
-        url: '/images/skills/firebase.webp'
+        url: '/assets/skills/firebase.webp'
     },
     {
         name: 'Github,Git',
-        url: '/images/skills/github.webp'
+        url: '/assets/skills/github.webp'
     },
     {
         name: 'MYSQL',
-        url: '/images/skills/mysql.webp'
+        url: '/assets/skills/mysql.webp'
     },
     {
         name: 'JQuery',
-        url: '/images/skills/jquery.webp'
+        url: '/assets/skills/jquery.webp'
     },
     {
         name: 'Angular 2+',
-        url: '/images/skills/angular.webp'
+        url: '/assets/skills/angular.webp'
     },
     {
         name: 'Docker',
-        url: '/images/skills/docker.webp'
+        url: '/assets/skills/docker.webp'
     },
     {
         name: 'Figma',
-        url: '/images/skills/figma.webp'
+        url: '/assets/skills/figma.webp'
     },
     {
         name: 'Empty',
-        url: '/images/skills/jetbrains.webp'
+        url: '/assets/skills/jetbrains.webp'
     },
     {
         name: 'Space jetbrains',
-        url: '/images/skills/jetbrains.webp'
+        url: '/assets/skills/jetbrains.webp'
     },
 ];
 
