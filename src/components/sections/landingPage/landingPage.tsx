@@ -45,7 +45,7 @@ const LandingPage = ()=>{
                             <div className={`${styles.Name} Name_animation`}>{t('Iam')} Ahmad Hijazi</div>
                             <div className={`${styles.Description} Desc_animation`}>{t('LandingPageParagraph')}</div>
                             <a download={'Ahmad_Hijazi_Resume.pdf'}
-                               href={'https://drive.google.com/uc?export=download&id=14iXawVsZrsLm-Q1gvyV8wYZv0AZvBMun'}
+                               href={t('url')}
                                   className={`${styles.DownloadCvButton} Button_animation`}>{t('DownloadCV')}</a>
 
                         </div>

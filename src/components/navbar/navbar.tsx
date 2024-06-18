@@ -9,6 +9,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import {useParams} from "next/navigation";
 import {useTranslation} from "@/app/i18n/client";
+import i18next, {changeLanguage} from "i18next";
 gsap.registerPlugin(ScrollToPlugin);
 const Navbar = ()=>{
 
@@ -25,6 +26,9 @@ const Navbar = ()=>{
 
 
     const NavElements = [HOME,WORK,MY_LIFE,CONTACT_ME]
+    const handleLang = (lang: string) =>{
+        changeLanguage(lang).then()
+    }
 
     return(
         <>
@@ -34,10 +38,19 @@ const Navbar = ()=>{
                 </div>
                 <div className={`${styles.NavbarElements}`}>
                     {
-                        NavElements.map((element, index)=>(
-                            <div onClick={() => handleNavigation(element.id)} key={index} className={`${styles.NavbarElement} NavElement_animation`}><Link  className={`${styles.NavLink} ${index === 0 && styles.NavLinkActive}`} href={'#'}> {t(element.name)}</Link></div>
+                        NavElements.map((element, index) => (
+                            <div onClick={() => handleNavigation(element.id)} key={index}
+                                 className={`${styles.NavbarElement} NavElement_animation`}><Link
+                                className={`${styles.NavLink} ${index === 0 && styles.NavLinkActive}`}
+                                href={'#'}> {t(element.name)}</Link></div>
                         ))
                     }
+                    <div className={`${styles.NavbarElement} ${styles.LangElement} NavElement_animation`}>
+                        <Link onClick={() => handleLang('de')} className={`${styles.NavLink} ${i18next.language === 'de' &&styles.LangElementActive}`} href={'#'}>DE</Link>
+                        <p>|</p>
+                        <Link onClick={() => handleLang('en')} className={`${styles.NavLink} ${i18next.language === 'en' &&styles.LangElementActive}` } href={'#'}>EN </Link>
+                    </div>
+
                 </div>
 
             </div>
