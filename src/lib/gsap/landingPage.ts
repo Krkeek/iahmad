@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {TextPlugin} from "gsap/TextPlugin";
-import {landingPageText} from "../../../dataEntry";
 
 export const landingPageAnimation = () =>{
     gsap.registerPlugin(ScrollTrigger)

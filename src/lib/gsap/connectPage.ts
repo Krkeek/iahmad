@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
-import {contactMeSentence, sections, whatIDoText} from "../../../dataEntry";
+import { sections} from "../../../dataEntry";
 export const connectPageAnimation = () =>{
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline()

@@ -3,8 +3,16 @@ import styles from './contactForm.module.css'
 import React, {useState} from "react";
 import {sendEmail} from "@/lib/sendEmail";
 import {Notification, FormData} from "../../../../../declarations";
+import {useParams} from "next/navigation";
+import {useTranslation} from "@/app/i18n/client";
 
 export default function ContactForm(){
+
+    const params = useParams<{ lng: string }>()
+    // @ts-ignore
+    const { t } = useTranslation(params.lng,'contactPage')
+
+
 
     const [notification, setNotification] = useState<Notification>({
         status: undefined,
@@ -66,11 +74,11 @@ export default function ContactForm(){
     return(
         <>
             <div className={`${styles.Container}`}>
-                <input value={formData.name} onChange={(event) => editFormData("name", event.target.value)} className={`${styles.Input}`} type={"text"} placeholder={'Name'} required/>
-                <input value={formData.email} onChange={(event) => editFormData("email", event.target.value)} className={`${styles.Input}`} type={"email"} placeholder={'Email address'} required/>
-                <input value={formData.subject} onChange={(event) => editFormData("subject", event.target.value)} className={`${styles.Input}`} type={"text"} placeholder={'Subject'} required/>
-                <textarea value={formData.message} onChange={(event) => editFormData("message", event.target.value)} className={`${styles.Input} ${styles.TextArea}`} placeholder={'Message'} required/>
-                <button style={ buttonDisabled ? {backgroundColor: "rgba(0, 0, 0, 0.5)"} : {backgroundColor: "black"}} disabled={buttonDisabled} onClick={handleSubmit} className={`${styles.Button}`}>Send</button>
+                <input value={formData.name} onChange={(event) => editFormData("name", event.target.value)} className={`${styles.Input}`} type={"text"} placeholder={t('Name')} required/>
+                <input value={formData.email} onChange={(event) => editFormData("email", event.target.value)} className={`${styles.Input}`} type={"email"} placeholder={t('EmailAddress')} required/>
+                <input value={formData.subject} onChange={(event) => editFormData("subject", event.target.value)} className={`${styles.Input}`} type={"text"} placeholder={t('Subject')} required/>
+                <textarea value={formData.message} onChange={(event) => editFormData("message", event.target.value)} className={`${styles.Input} ${styles.TextArea}`} placeholder={t('Message')} required/>
+                <button style={ buttonDisabled ? {backgroundColor: "rgba(0, 0, 0, 0.5)"} : {backgroundColor: "black"}} disabled={buttonDisabled} onClick={handleSubmit} className={`${styles.Button}`}>{t('Send')}</button>
                 <p className={`${styles.NotificationDiv}`}>{notification.message}</p>
               </div>
 </>

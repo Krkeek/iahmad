@@ -3,10 +3,18 @@ import styles from './contactPage.module.css'
 import SocialMediaIcons from "../../socialMediaIcons/socialMediaIcons";
 import ContactForm from "./contactForm/contactForm";
 import SectionLayout from "@/components/sectionLayout/sectionLayout";
-import {CONTACT_ME, contactMeSentence, sections} from "../../../../dataEntry";
+import {sections} from "../../../../dataEntry";
 import {useGSAP} from "@gsap/react";
 import {connectPageAnimation} from "@/lib/gsap/connectPage";
+import {useParams} from "next/navigation";
+import {useTranslation} from "@/app/i18n/client";
 export default function ContactPage(){
+
+
+    const params = useParams<{ lng: string }>()
+    // @ts-ignore
+    const { t } = useTranslation(params.lng,'contactPage')
+
 
 
     useGSAP(()=>{
@@ -18,7 +26,7 @@ export default function ContactPage(){
 
             <SectionLayout id={sections.connectPage.id} name={sections.connectPage.title} number={5}>
                     <div className={`${styles.Content}`}>
-                        <div className={`${styles.LeftSide} ContactText_animation`}>{contactMeSentence[0]}<span style={{color: "black"}}>{contactMeSentence[1]}</span>
+                        <div className={`${styles.LeftSide} ContactText_animation`}>{t('Sentence')}<span style={{color: "black"}}>{t('Word')}</span>
                         </div>
                         <div className={`${styles.RightSide} ContactBox_animation`}>
                             <ContactForm/>

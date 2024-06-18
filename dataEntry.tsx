@@ -100,50 +100,8 @@ export const projects = [
 ];
 
 
-export const educations = [
-    {
-        date: "Oct 2021 - April 2025 (Expected)",
-        title: "Masters in Automotive Software Engineering",
-        description: "Technische Universität Chemnitz"
-    },
-    {
-        date: "Oct 2018 - Jun 2021",
-        title: "Bachelors in Computer Engineering",
-        description: "Lebanese International University"
-    }
-]
-
-export const experiences = [
-    {
-        date: "Mar 2024 - current",
-        title: "Frontend Developer",
-        description: "Technische Universität Chemnitz - Internship"
-    },  {
-        date: "Sep 2023 - Mar 2024",
-        title: "Web Engineer",
-        description: "AI-SSISTANT"
-    }
-]
-
-export const socialMedia = [
-    {
-        name: 'linkedin',
-        url: 'https://www.linkedin.com/in/ahmadhijazii'
-    },
-    {
-        name: 'github',
-        url: 'https://www.github.com/Krkeek'
-    },
-    {
-        name: 'instagram',
-        url: 'https://www.instagram.com/ahmad_hijazii_/'
-
-    }
-];
-
-
-export const contactMeSentence = ['Lets do somthing new, different and more meaningfull or make things more practical or coneptual ? ','Just say hello!']
-
+export const educations = [ 'ASE','CE' ]
+export const experiences = ['FD','WE' ]
 
 export const languageSkills = [
         {
@@ -236,9 +194,19 @@ export const techSkills = [
     },
 ];
 
-export const whatIDoText =
-    `I started playing around with code in high school, and it sparked a <span>passion</span> that stuck with me ever since. With a strong work ethic, dedication, motivation and years of experience I've been able to give my best results, consistently exceeding expectations and pushing the boundaries of what I thought possible `
 
+export const socialMedia = [
+    {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/ahmadhijazii'
+    },
+    {
+        name: 'github',
+        url: 'https://www.github.com/Krkeek'
+    },
+    {
+        name: 'instagram',
+        url: 'https://www.instagram.com/ahmad_hijazii_/'
 
-export const landingPageText = "Ever wondered how ideas become stunning websites? I'm a web engineer who loves making that magic happen. Need a hand with your next project? Let's turn your vision into reality"
-
+    }
+];

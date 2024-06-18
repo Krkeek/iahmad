@@ -1,0 +1,24 @@
+{
+  "Education": "Ausbildung",
+  "Experience": "Erfahrung",
+  "ASE": {
+    "date": "Okt 2021 - Apr 2025 (Erwartet)",
+    "title": "Master in Automotive Software Engineering",
+    "description": "Technische Universität Chemnitz"
+  },
+  "CE": {
+    "date": "Okt 2018 - Jun 2021",
+    "title": "Bachelor in Computer Engineering",
+    "description": "Lebanese International University"
+  },
+  "FD": {
+    "date": "Mär 2024 - aktuell",
+    "title": "Frontend Entwickler",
+    "description": "Technische Universität Chemnitz - Praktikum"
+  },
+  "WE": {
+    "date": "Sep 2023 - Mär 2024",
+    "title": "Webentwickler",
+    "description": "AI-SSISTANT"
+  }
+}

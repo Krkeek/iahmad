@@ -6,7 +6,16 @@ import Image from "next/image";
 import SectionLayout from "@/components/sectionLayout/sectionLayout";
 import {useGSAP} from "@gsap/react";
 import {resumePageAnimation} from "@/lib/gsap/resumePage";
+import {useParams} from "next/navigation";
+import {useTranslation} from "@/app/i18n/client";
+import {EducationType} from "../../../../declarations";
 export default function ResumePage(){
+
+    const params = useParams<{ lng: string }>()
+    // @ts-ignore
+    const { t } = useTranslation(params.lng,'resumePage')
+
+
 
     useGSAP(()=>{
         const ctx = gsap.context(()=>{
@@ -21,22 +30,22 @@ export default function ResumePage(){
             <SectionLayout id={sections.resumePage.id} name={sections.resumePage.title} number={4} >
                         <div className={`${styles.Content}`}>
                             <div className={`${styles.Div}`}>
-                                <div className={`${styles.Title} ExperienceTitle_animation`}><Image width={100} height={100} src={"/assets/resume/education.webp"} alt={'icon'}/>Education</div>
+                                <div className={`${styles.Title} ExperienceTitle_animation`}><Image width={100} height={100} src={"/assets/resume/education.webp"} alt={'icon'}/>{t('Education')}</div>
                                 {
-                                    educations.map(((education,index) =>(
+                                    educations.map(((education: string,index) =>(
                                         <div className={`${styles.ResumeBoxDiv} ExperienceBoxDiv_animation`} key={index}>
-                                            <ResumeBox data={education}/>
+                                            <ResumeBox dataID={education}/>
                                         </div>
                                     )))
                                 }
 
                             </div>
                             <div className={`${styles.Div}`}>
-                                <div className={`${styles.Title} ExperienceTitle_animation`}><Image width={100} height={100} src={"/assets/resume/experience.webp"} alt={'icon'}/>Experience</div>
+                                <div className={`${styles.Title} ExperienceTitle_animation`}><Image width={100} height={100} src={"/assets/resume/experience.webp"} alt={'icon'}/>{t('Experience')}</div>
                                 {
-                                    experiences.map(((experience, index) =>(
+                                    experiences.map(((experience: string, index) =>(
                                         <div className={`${styles.ResumeBoxDiv} EducationBoxDiv_animation`} key={index}>
-                                            <ResumeBox data={experience}/>
+                                            <ResumeBox dataID={experience}/>
                                         </div>
                                     )))
                                 }
