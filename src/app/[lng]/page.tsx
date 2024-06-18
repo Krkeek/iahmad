@@ -19,7 +19,6 @@ export default function Home() {
     <SkillsPage />
     <ProjectsPage />
     <ResumePage />
-    <CalisthenicsPage />
     <ContactPage />
     <Analytics />
 </>
