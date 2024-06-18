@@ -1,0 +1,15 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Content {
+    font-size: 1.3rem;
+    width: 75%;
+}
+.LeftSide {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}

@@ -26,6 +26,10 @@ export const sections = {
         id: "connectPage",
         title: 'Connect'
     },
+    calisthenicsPage: {
+        id: "calisthenicsPage",
+        title: 'Calisthenics'
+    },
 }
 
 

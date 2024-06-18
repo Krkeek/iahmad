@@ -8,6 +8,7 @@ import ContactPage from "@/components/sections/contactPage/contactPage";
 import { Analytics } from '@vercel/analytics/react';
 import {useRouter} from "next/router";
 import {useEffect} from "react";
+import CalisthenicsPage from "@/components/sections/calisthenicsPage/calisthenicsPage";
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
     <SkillsPage />
     <ProjectsPage />
     <ResumePage />
+    {/*<CalisthenicsPage />*/}
     <ContactPage />
     <Analytics />
 </>
