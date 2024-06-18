@@ -7,7 +7,7 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ahmad Hijazi",
-  description: "Take a look!",
+  description: "Take a look! - ahmadhijazi_me@hotmail.com",
 };
 
 
